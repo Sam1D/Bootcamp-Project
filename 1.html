@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body id="out"></body>
+</html>
+
+<script type="text/javascript">
+	var data = { 
+		nama : "Pratama Dimas Putra Widialdo",
+		address : "Malang, Jawa Timur", 
+		hobbies : ['Programing', 'Gaming', 'Watching Anime', 'Drumming'],
+		is_married : false,
+		school : { 
+			highSchool : "SMK Negeri 4 Malang",
+			university : null 
+		},
+		skills : [
+			{ name : "HTML", score : 80 },
+			{ name : "CSS", score : 50 },
+			{ name : "Java Script", score : 60 },
+			{ name : "PHP", score : 80 },
+			{ name : "C++", score : 80 },
+			{ name : "Java", score : 50 },
+		]
+	}
+
+	document.getElementById("out").innerHTML = JSON.stringify(data);
+	console.log(data);
+</script>
